@@ -58,7 +58,7 @@ namespace Building_Materials.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Ошибка соединения...........", MessageBoxButton.OK, MessageBoxImage.Stop);
+                MessageBox.Show(ex.Message, "Не возможно войти, попробуйте позднее", MessageBoxButton.OK, MessageBoxImage.Stop);
                 return false;
             }
 

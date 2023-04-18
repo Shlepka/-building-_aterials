@@ -24,9 +24,12 @@ namespace Building_Materials
             InitializeComponent();
         }
 
+
         private void button1_Click(object sender, RoutedEventArgs e)
         {
+            this.go.Content = "Подтвердить";
             String allowchar = " ";
+
 
             allowchar = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z";
 
@@ -55,18 +58,23 @@ namespace Building_Materials
 
 
                 pwd += temp;
-             
+                textBox1.Text = pwd;
 
 
-                
+
+
+
 
             }
-            if (textBox2.Text == temp)
-                MessageBox.Show("Верно!");
-            else
-                MessageBox.Show("Ошибка!");
-            textBox1.Text = pwd;
 
+
+
+        }
+
+
+        private void txbLogin_TextChanged(object sender, TextChangedEventArgs e)
+        {
+         
         }
     }
 }

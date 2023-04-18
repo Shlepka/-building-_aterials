@@ -98,7 +98,6 @@
       <DependentUpon>Captcha.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\AppData.cs" />
-    <Compile Include="ViewModel\AppFrame.cs" />
     <Compile Include="ViewModel\BaseModel.cs" />
     <Compile Include="ViewModel\ConnectClass.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
@@ -152,6 +151,8 @@
       <DependentUpon>Building_Materials.edmx</DependentUpon>
       <LastGenOutput>Building_Materials.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\icon.ico" />
+    <Resource Include="Resources\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

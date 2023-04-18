@@ -7,42 +7,53 @@
         mc:Ignorable="d"
         ResizeMode="CanMinimize"
         WindowStartupLocation="CenterScreen"
-        Title="Authorization" Height="450" Width="400">
+ 
+        Title="Authorization" Height="550" Width="400" Icon="/Resources/icon.ico">
     <Grid>
+        
 
         <StackPanel Margin="10 0 0 20"
                     VerticalAlignment="Center"
                     Width="250"
                     Height="280"
                     HorizontalAlignment="Center"
+
                     >
+            <Image
+                Source="/Resources/logo.png"
+            Width="80"
+            Height="80"
+            />
+
+
             <Label 
-             HorizontalContentAlignment="Center"
+             HorizontalContentAlignment="Center" 
                FontSize="15"
                
-               FontStyle="Normal"  Foreground="Black" >
+               FontStyle="Normal" FontFamily="Comic Sans MS"  Foreground="Black" >
                 Авторизация
             </Label>
 
-          
 
-            <Label>
-                Введите логин
+
+            <Label  FontStyle="Normal" FontFamily="Comic Sans MS" >
+                Введите логин 
             </Label>
-            <TextBox Name="txbLogin"/>
+            <TextBox Name="txbLogin" Background="#76e383" />
 
-            <Label>
+            <Label FontStyle="Normal" FontFamily="Comic Sans MS" >
                 Введите пароль
             </Label>
             <PasswordBox MinHeight="10"
-                         Name="txPassword"/>
+                         Name="txPassword"
+                         Background="#76e383"/>
             <Button x:Name="Enter"
                     Content="Вход"
-                    
+                     FontStyle="Normal" FontFamily="Comic Sans MS"
                     HorizontalAlignment="Center"
                     Margin="10"
                     Width="100"
-                    Height="25"  Foreground="Black" Background="#FF498C51" Click="Enter_Click"
+                    Height="25"  Foreground="Black" Background="#498c51" Click="Enter_Click"
                    />
             
         </StackPanel>
